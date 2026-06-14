@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProjetoLargo — Slides</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+    background: #f0ece6;
+    padding: 32px;
+  }
+
+  .slide {
+    width: 960px;
+    height: 540px;
+    margin: 0 auto 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 64px;
+    background: #ffffff;
+    position: relative;
+    page-break-after: always;
+  }
+
+  /* ── Slide 1 – Capa ─────────────────────────────────── */
+  .slide-capa {
+    background: #E8703A;
+  }
+
+  .capa-eyebrow {
+    font-size: 11px;
+    letter-spacing: .1em;
+    color: #fde8dc;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .capa-title {
+    font-size: 56px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .capa-sub {
+    font-size: 17px;
+    color: #fde8dc;
+    max-width: 480px;
+    line-height: 1.5;
+    margin-bottom: 36px;
+  }
+
+  .member-row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .member {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.18);
+    border-radius: 99px;
+    padding: 6px 16px 6px 8px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .avatar {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.28);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ── Slides internos ────────────────────────────────── */
+  .slide-num {
+    font-size: 11px;
+    letter-spacing: .08em;
+    color: #aaa;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .accent-bar {
+    width: 36px; height: 4px;
+    border-radius: 2px;
+    background: #E8703A;
+    margin-bottom: 20px;
+  }
+
+  .slide-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .slide-sub {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.65;
+    max-width: 600px;
+    margin-bottom: 24px;
+  }
+
+  code {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 13px;
+    background: #f5f2ee;
+    padding: 1px 6px;
+    border-radius: 5px;
+    color: #993C1D;
+  }
+
+  /* ── Grid de cards ──────────────────────────────────── */
+  .cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .cols-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .col-card {
+    background: #faf8f5;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+
+  .col-card-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+  }
+
+  .col-card-body {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+  }
+
+  /* ── Tags de cor ────────────────────────────────────── */
+  .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+
+  .tag {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-radius: 99px;
+  }
+
+  .t-madeira    { background: #f0e6d9; color: #6b3d10; }
+  .t-couro      { background: #ecdcca; color: #5a2e04; }
+  .t-ceramica   { background: #fde8d8; color: #993C1D; }
+  .t-alimentos  { background: #e3f2d8; color: #2e6010; }
+  .t-arte       { background: #eeedf9; color: #3C3489; }
+  .t-vestuario  { background: #ddeefa; color: #0C447C; }
+  .t-bijuterias { background: #fae8f2; color: #72243E; }
+  .t-antiquid   { background: #ebebeb; color: #444; }
+
+  /* ── Lista de requisitos ────────────────────────────── */
+  .req-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+
+  .req-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  .check {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: #E8703A;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .check::after {
+    content: '';
+    width: 9px; height: 5px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg) translateY(-2px);
+    display: block;
+  }
+
+  /* ── Decoração de canto ─────────────────────────────── */
+  .corner-deco {
+    position: absolute;
+    bottom: -60px; right: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(232,112,58,0.08);
+  }
+
+  /* ── Print ──────────────────────────────────────────── */
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .slide {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — Capa -->
+<div class="slide slide-capa">
+  <div class="capa-eyebrow">Projeto Prático — Swift / SwiftUI</div>
+  <div class="capa-title">ProjetoLargo</div>
+  <div class="capa-sub">Vitrine virtual da Feira do Largo da Ordem — Curitiba, PR</div>
+  <div class="member-row">
+    <div class="member"><div class="avatar">EF</div>Eduardo Fabri</div>
+    <div class="member"><div class="avatar">RZ</div>Roberto Zhou</div>
+    <div class="member"><div class="avatar">JP</div>João Pedro</div>
+    <div class="member"><div class="avatar">JC</div>João Corrêa</div>
+  </div>
+  <div class="corner-deco" style="background:rgba(255,255,255,0.1)"></div>
+</div>
+
+<!-- SLIDE 2 — Visão geral -->
+<div class="slide">
+  <div class="corner-deco"></div>
+  <div class="slide-num">01 — visão geral</div>
+  <div class="accent-bar"></div>
+  <div class="slide-title">O que é o app?</div>
+  <div class="slide-sub">Vitrine de produtos artesanais da Feira do Largo da Ordem, com navegação por categorias, busca, favoritos e tela de detalhe de cada peça.</div>
+  <div class="cols-4">
+    <div class="col-card">
+      <div class="col-card-title">3 abas</div>
+      <div class="col-card-body">Vitrine · Favoritos · Categorias</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">30 produtos</div>
+      <div class="col-card-body">8 categorias, imagens locais e offline</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">iOS 18+</div>
+      <div class="col-card-body">SwiftUI, iPhone e iPad</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">Dark mode</div>
+      <div class="col-card-body">Automático via cores semânticas</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — Design / Cores -->
+<div class="slide">
+  <div class="corner-deco"></div>
+  <div class="slide-num">02 — design · Eduardo</div>
+  <div class="accent-bar"></div>
+  <div class="slide-title">Paleta de cores</div>
+  <div class="slide-sub">Cada cor foi escolhida com base no material ou no contexto da categoria. A cor de destaque <strong style="color:#993C1D">terra-cota #E8703A</strong> vem das fachadas coloniais do Largo da Ordem.</div>
+  <div class="tags">
+    <span class="tag t-madeira">Madeira — marrom natural</span>
+    <span class="tag t-couro">Couro — marrom escuro</span>
+    <span class="tag t-ceramica">Cerâmica — laranja barro</span>
+    <span class="tag t-alimentos">Alimentos — verde vivo</span>
+    <span class="tag t-arte">Arte — roxo criativo</span>
+    <span class="tag t-vestuario">Vestuário — azul cotidiano</span>
+    <span class="tag t-bijuterias">Bijuterias — rosa vibrante</span>
+    <span class="tag t-antiquid">Antiguidades — cinza patina</span>
+  </div>
+</div>
+
+<!-- SLIDE 4 — Arquitetura -->
+<div class="slide">
+  <div class="corner-deco"></div>
+  <div class="slide-num">03 — arquitetura · Roberto</div>
+  <div class="accent-bar"></div>
+  <div class="slide-title">MVVM com <code>@Observable</code></div>
+  <div class="slide-sub">A View exibe e captura interações. O ViewModel concentra toda a lógica — filtragem, busca, ordenação e favoritos.</div>
+  <div class="cols">
+    <div class="col-card">
+      <div class="col-card-title">Model</div>
+      <div class="col-card-body"><code>ProdutoArtesanal</code> · <code>ProdutosData</code><br>30 produtos, DataSource estático</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">ViewModel</div>
+      <div class="col-card-body"><code>LojaViewModel</code> com <code>@Observable</code><br>Views atualizam automaticamente</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">Lógica de busca</div>
+      <div class="col-card-body">Filtra por categoria + texto em tempo real usando <code>localizedCaseInsensitiveContains</code></div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">Ordenação</div>
+      <div class="col-card-body">Relevância · Menor Preço · Maior Preço · Nome A–Z</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 5 — Grid e Navegação -->
+<div class="slide">
+  <div class="corner-deco"></div>
+  <div class="slide-num">04 — grid e navegação · João</div>
+  <div class="accent-bar"></div>
+  <div class="slide-title">Grid adaptável + animações</div>
+  <div class="slide-sub"><code>LazyVGrid</code> com <code>GridItem(.adaptive(minimum: 150))</code> — número de colunas calculado automaticamente pela largura da tela.</div>
+  <div class="cols">
+    <div class="col-card">
+      <div class="col-card-title">Card em camadas</div>
+      <div class="col-card-body">4 overlays sobre um <code>Rectangle</code> com <code>aspectRatio(4/5)</code> — tamanho uniforme independente da imagem</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">NavigationLink</div>
+      <div class="col-card-body">Padrão de valor tipado com <code>.navigationDestination(for:)</code> — card desacoplado da tela de detalhe</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">Animações</div>
+      <div class="col-card-body"><code>.spring(response: 0.3)</code> no botão favoritar com <code>scaleEffect</code> 1.0 → 1.15</div>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">ShareLink</div>
+      <div class="col-card-body">Compartilhamento nativo do iOS na tela de detalhe com nome, artesão e preço</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — Acessibilidade -->
+<div class="slide">
+  <div class="corner-deco"></div>
+  <div class="slide-num">05 — acessibilidade · João</div>
+  <div class="accent-bar"></div>
+  <div class="slide-title">Requisitos de acessibilidade</div>
+  <div class="slide-sub">Todos os critérios das diretrizes da Apple implementados.</div>
+  <ul class="req-list">
+    <li><div class="check"></div><span><code>.accessibilityLabel</code> descritivo em todas as imagens e botões de ação</span></li>
+    <li><div class="check"></div><span>Touch targets mínimos de <strong>44×44 pt</strong> nos botões de favoritar</span></li>
+    <li><div class="check"></div><span>Dynamic Type — fontes semânticas sem altura fixa, escala com as preferências do usuário</span></li>
+    <li><div class="check"></div><span><code>accessibilitySortPriority</code> — VoiceOver lê o nome do produto antes da imagem</span></li>
+    <li><div class="check"></div><span><code>.accessibilityHidden(true)</code> em badges decorativos para evitar repetição</span></li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E89629072FA7ADAE00D2821B /* ObraDeArte.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89629062FA7ADAE00D2821B /* ObraDeArte.swift */; };
+		E89629082FA7AEA400D2821B /* GaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89628FF2FA7AD3F00D2821B /* GaleriaViewController.swift */; };
+		E89629092FA7AEC700D2821B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89629012FA7AD7500D2821B /* DesignSystem.swift */; };
+		E896290A2FA7AF7800D2821B /* ObraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89629042FA7AD9400D2821B /* ObraCollectionViewCell.swift */; };
+		E896290B2FA7AF8400D2821B /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89628FE2FA7AD3F00D2821B /* DetalheViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E89628D32FA7AC3E00D2821B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E89628B42FA7AC3C00D2821B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E89628BB2FA7AC3C00D2821B;
+			remoteInfo = CuritibaArte;
+		};
+		E89628DD2FA7AC3E00D2821B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E89628B42FA7AC3C00D2821B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E89628BB2FA7AC3C00D2821B;
+			remoteInfo = CuritibaArte;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E89628BC2FA7AC3C00D2821B /* CuritibaArte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuritibaArte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89628D22FA7AC3E00D2821B /* CuritibaArteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuritibaArteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89628DC2FA7AC3E00D2821B /* CuritibaArteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuritibaArteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89628FE2FA7AD3F00D2821B /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
+		E89628FF2FA7AD3F00D2821B /* GaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaViewController.swift; sourceTree = "<group>"; };
+		E89629012FA7AD7500D2821B /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		E89629042FA7AD9400D2821B /* ObraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraCollectionViewCell.swift; sourceTree = "<group>"; };
+		E89629062FA7ADAE00D2821B /* ObraDeArte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraDeArte.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E89628E42FA7AC3E00D2821B /* Exceptions for "CuritibaArte" folder in "CuritibaArte" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E89628BB2FA7AC3C00D2821B /* CuritibaArte */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E89628BE2FA7AC3C00D2821B /* CuritibaArte */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E89628E42FA7AC3E00D2821B /* Exceptions for "CuritibaArte" folder in "CuritibaArte" target */,
+			);
+			path = CuritibaArte;
+			sourceTree = "<group>";
+		};
+		E89628D52FA7AC3E00D2821B /* CuritibaArteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CuritibaArteTests;
+			sourceTree = "<group>";
+		};
+		E89628DF2FA7AC3E00D2821B /* CuritibaArteUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CuritibaArteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E89628B92FA7AC3C00D2821B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E89628CF2FA7AC3E00D2821B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E89628D92FA7AC3E00D2821B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E89628B32FA7AC3C00D2821B = {
+			isa = PBXGroup;
+			children = (
+				E89628F52FA7ACAF00D2821B /* Utils */,
+				E89628F42FA7ACAB00D2821B /* Views */,
+				E89628F32FA7ACA500D2821B /* Controllers */,
+				E89628F02FA7AC7200D2821B /* Models */,
+				E89628BE2FA7AC3C00D2821B /* CuritibaArte */,
+				E89628D52FA7AC3E00D2821B /* CuritibaArteTests */,
+				E89628DF2FA7AC3E00D2821B /* CuritibaArteUITests */,
+				E89628BD2FA7AC3C00D2821B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E89628BD2FA7AC3C00D2821B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E89628BC2FA7AC3C00D2821B /* CuritibaArte.app */,
+				E89628D22FA7AC3E00D2821B /* CuritibaArteTests.xctest */,
+				E89628DC2FA7AC3E00D2821B /* CuritibaArteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E89628F02FA7AC7200D2821B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E89629062FA7ADAE00D2821B /* ObraDeArte.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E89628F32FA7ACA500D2821B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E89628FE2FA7AD3F00D2821B /* DetalheViewController.swift */,
+				E89628FF2FA7AD3F00D2821B /* GaleriaViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E89628F42FA7ACAB00D2821B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E89629042FA7AD9400D2821B /* ObraCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E89628F52FA7ACAF00D2821B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E89629012FA7AD7500D2821B /* DesignSystem.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E89628BB2FA7AC3C00D2821B /* CuritibaArte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E89628E52FA7AC3E00D2821B /* Build configuration list for PBXNativeTarget "CuritibaArte" */;
+			buildPhases = (
+				E89628B82FA7AC3C00D2821B /* Sources */,
+				E89628B92FA7AC3C00D2821B /* Frameworks */,
+				E89628BA2FA7AC3C00D2821B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E89628BE2FA7AC3C00D2821B /* CuritibaArte */,
+			);
+			name = CuritibaArte;
+			packageProductDependencies = (
+			);
+			productName = CuritibaArte;
+			productReference = E89628BC2FA7AC3C00D2821B /* CuritibaArte.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E89628D12FA7AC3E00D2821B /* CuritibaArteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E89628EA2FA7AC3E00D2821B /* Build configuration list for PBXNativeTarget "CuritibaArteTests" */;
+			buildPhases = (
+				E89628CE2FA7AC3E00D2821B /* Sources */,
+				E89628CF2FA7AC3E00D2821B /* Frameworks */,
+				E89628D02FA7AC3E00D2821B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E89628D42FA7AC3E00D2821B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E89628D52FA7AC3E00D2821B /* CuritibaArteTests */,
+			);
+			name = CuritibaArteTests;
+			packageProductDependencies = (
+			);
+			productName = CuritibaArteTests;
+			productReference = E89628D22FA7AC3E00D2821B /* CuritibaArteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E89628DB2FA7AC3E00D2821B /* CuritibaArteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E89628ED2FA7AC3E00D2821B /* Build configuration list for PBXNativeTarget "CuritibaArteUITests" */;
+			buildPhases = (
+				E89628D82FA7AC3E00D2821B /* Sources */,
+				E89628D92FA7AC3E00D2821B /* Frameworks */,
+				E89628DA2FA7AC3E00D2821B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E89628DE2FA7AC3E00D2821B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E89628DF2FA7AC3E00D2821B /* CuritibaArteUITests */,
+			);
+			name = CuritibaArteUITests;
+			packageProductDependencies = (
+			);
+			productName = CuritibaArteUITests;
+			productReference = E89628DC2FA7AC3E00D2821B /* CuritibaArteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E89628B42FA7AC3C00D2821B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					E89628BB2FA7AC3C00D2821B = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					E89628D12FA7AC3E00D2821B = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = E89628BB2FA7AC3C00D2821B;
+					};
+					E89628DB2FA7AC3E00D2821B = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = E89628BB2FA7AC3C00D2821B;
+					};
+				};
+			};
+			buildConfigurationList = E89628B72FA7AC3C00D2821B /* Build configuration list for PBXProject "CuritibaArte" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E89628B32FA7AC3C00D2821B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E89628BD2FA7AC3C00D2821B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E89628BB2FA7AC3C00D2821B /* CuritibaArte */,
+				E89628D12FA7AC3E00D2821B /* CuritibaArteTests */,
+				E89628DB2FA7AC3E00D2821B /* CuritibaArteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E89628BA2FA7AC3C00D2821B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E89628D02FA7AC3E00D2821B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E89628DA2FA7AC3E00D2821B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E89628B82FA7AC3C00D2821B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89629092FA7AEC700D2821B /* DesignSystem.swift in Sources */,
+				E896290B2FA7AF8400D2821B /* DetalheViewController.swift in Sources */,
+				E89629072FA7ADAE00D2821B /* ObraDeArte.swift in Sources */,
+				E896290A2FA7AF7800D2821B /* ObraCollectionViewCell.swift in Sources */,
+				E89629082FA7AEA400D2821B /* GaleriaViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E89628CE2FA7AC3E00D2821B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E89628D82FA7AC3E00D2821B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E89628D42FA7AC3E00D2821B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E89628BB2FA7AC3C00D2821B /* CuritibaArte */;
+			targetProxy = E89628D32FA7AC3E00D2821B /* PBXContainerItemProxy */;
+		};
+		E89628DE2FA7AC3E00D2821B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E89628BB2FA7AC3C00D2821B /* CuritibaArte */;
+			targetProxy = E89628DD2FA7AC3E00D2821B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E89628E62FA7AC3E00D2821B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CuritibaArte/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.CuritibaArte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E89628E72FA7AC3E00D2821B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CuritibaArte/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.CuritibaArte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E89628E82FA7AC3E00D2821B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E89628E92FA7AC3E00D2821B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E89628EB2FA7AC3E00D2821B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.CuritibaArteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuritibaArte.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CuritibaArte";
+			};
+			name = Debug;
+		};
+		E89628EC2FA7AC3E00D2821B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.CuritibaArteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuritibaArte.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CuritibaArte";
+			};
+			name = Release;
+		};
+		E89628EE2FA7AC3E00D2821B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.CuritibaArteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CuritibaArte;
+			};
+			name = Debug;
+		};
+		E89628EF2FA7AC3E00D2821B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.CuritibaArteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CuritibaArte;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E89628B72FA7AC3C00D2821B /* Build configuration list for PBXProject "CuritibaArte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E89628E82FA7AC3E00D2821B /* Debug */,
+				E89628E92FA7AC3E00D2821B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E89628E52FA7AC3E00D2821B /* Build configuration list for PBXNativeTarget "CuritibaArte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E89628E62FA7AC3E00D2821B /* Debug */,
+				E89628E72FA7AC3E00D2821B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E89628EA2FA7AC3E00D2821B /* Build configuration list for PBXNativeTarget "CuritibaArteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E89628EB2FA7AC3E00D2821B /* Debug */,
+				E89628EC2FA7AC3E00D2821B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E89628ED2FA7AC3E00D2821B /* Build configuration list for PBXNativeTarget "CuritibaArteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E89628EE2FA7AC3E00D2821B /* Debug */,
+				E89628EF2FA7AC3E00D2821B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E89628B42FA7AC3C00D2821B /* Project object */;
+}
